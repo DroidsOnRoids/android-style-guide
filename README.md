@@ -1,7 +1,5 @@
 # Droids On Roids: Android Code Style
 
----
-
 ## Config
 
 ### Android Studio
@@ -23,8 +21,6 @@ This ensures formatting consistency across projects. It also makes code review m
 ### Continuous Integration
 
 // SonarQube?
-
----
 
 ## Code style
 
@@ -50,8 +46,6 @@ The most important rule is to be consistent within a project.
 
 
 Only uncertain or controversial topic will be listed here.
-
----
 
 ## Specific topics
 
