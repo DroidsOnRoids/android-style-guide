@@ -1,14 +1,13 @@
 # android-style-guide
 
-* Android
+- Android
 
-	Android specific guidelines, including XML
+  Android specific guidelines, including XML
 
-* Java
+- Java
 
-	Code style for Java
+  Code style for Java
 
-* Kotlin
+- Kotlin
 
-	Code style for Kotlin.
-	These are generally an extension for Java guidelines with Kotlin specific features.
+  Code style for Kotlin. These are generally an extension for Java guidelines with Kotlin specific features.
