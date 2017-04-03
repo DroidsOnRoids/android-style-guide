@@ -22,7 +22,7 @@ It won't break your builds, but it will judge you and your code by commenting yo
 
 #### Local config
 
-To use SonarQube locally in your project, see the official guide for reference:
+You can also run SonarQube locally in your project without waiting for a remote build to complete. See the official guide for reference:
 
 [Analyzing with SonarQube Scanner for Gradle](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Gradle)
 
