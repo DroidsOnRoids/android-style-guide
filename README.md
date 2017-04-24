@@ -26,6 +26,32 @@ You can also run SonarQube locally in your project without waiting for a remote 
 
 [Analyzing with SonarQube Scanner for Gradle](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Gradle)
 
+#### SonarLint
+
+[SonarLint](http://www.sonarlint.org/intellij/index.html) is an Android Studio plugin. It can connect to an external SonarQube server and analyze code on-the-fly, similar to the built-in default Lint functionality.
+
+I think you can handle the plugin config within Android Studio.
+
+If it doesn't work out of the box, you'll have to use a different JDK with JCE unlimited strength policy:
+
+* install the newest [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html)
+
+	Homebrew: `brew install Caskroom/cask/java`.
+	
+* install [JCE Unlimited Strength Policy](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html)
+
+	`brew install Caskroom/cask/jce-unlimited-strength-policy`
+	
+* select the JDK version used by Android Studio
+
+	Go to `~/Library/Preferences/AndroidStudio2.3/studio.jdk` (if it doesn't exist, just create a new one).
+	
+	Add the following line `/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk`.
+	
+	Make sure to use change use your current version numbers.
+	
+* restart Android Studio
+
 ## Code style
 
 There is no strict code style that you have to follow. Instead, please refer to some good existing ones:
