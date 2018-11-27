@@ -1,0 +1,23 @@
+subprojects {
+    apply plugin: 'io.gitlab.arturbosch.detekt'
+
+    dependencies {
+        detekt "io.gitlab.arturbosch.detekt:detekt-formatting:$versions.detekt"
+        detekt "io.gitlab.arturbosch.detekt:detekt-cli:$versions.detekt"
+    }
+
+    detekt {
+        config = rootProject.files('default-detekt-config.yml')
+        reports {
+            html {
+                enabled = false
+            }
+        }
+    }
+
+    tasks.whenTaskAdded {
+        if (it.name == 'check') {
+            it.dependsOn 'detekt'
+        }
+    }
+}
